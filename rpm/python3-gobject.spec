@@ -14,7 +14,10 @@ Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	%{python_version}-devel
 BuildRequires:	pkgconfig(glib-2.0) >= 2.38.0
-BuildRequires:	pkgconfig(py3cairo)
+BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.38.0
+BuildRequires:	pkgconfig(gio-2.0) >= 2.38.0
+BuildRequires:	pkgconfig(py3cairo) >= 1.10.0
+BuildRequires:	pkgconfig(libffi) >= 3.0
 Requires:	%{python_version}-base
 
 %description
